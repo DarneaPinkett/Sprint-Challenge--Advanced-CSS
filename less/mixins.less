@@ -1,1 +1,17 @@
 // Mixins Here
+
+.button() {
+    border-radius: 20px;
+    border: none;
+    font-size: 2.1em;
+    padding: 15px 35px;
+    margin: 4px 2px;
+    display: inline-block;
+}
+
+.my-hover-mixin() {
+    &:hover {
+        background: #00ffcc;
+        color: #001a33;
+    }
+}
