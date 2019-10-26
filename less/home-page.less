@@ -3,10 +3,16 @@
 .home {
   @media @phone {
     max-width: 500px;
+    justify-content: center;
     margin: 0 auto;
   }
 
   .intro {
+    .mainheader {
+      @media @phone {
+        width: 120%;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -64,10 +70,14 @@
     @media @phone {
       flex-direction: column-reverse;
       padding: 0 15px;
+      align-items: flex-start;
     }
 
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 500px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -80,19 +90,22 @@
       .btn {
         background: @btn-bg-color;
         color: @wild-sand;
-        .button() 
+        @media @phone {
+          width: 500px;
+          text-align: center;
+        }
+        .button();
+        .my-hover-mixin(); 
       }
-      @media @phone {
-        width: 500px;
-      }
+      
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
       @media @phone {
-        width: 88%;
-        margin: 0 auto;
+        width: 88.5%;
+        margin: auto 0;
       }
       
       img {
@@ -101,5 +114,8 @@
         border-radius: 10px;
       }
     }
+  }
+  @media @phone {
+    width: 500px;
   }
 }// home
