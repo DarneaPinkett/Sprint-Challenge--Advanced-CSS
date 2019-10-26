@@ -8,3 +8,10 @@
     margin: 4px 2px;
     display: inline-block;
 }
+
+.my-hover-mixin(@backgroud, @font-color) {
+    &:hover {
+        background: @backgroud;
+        color: @font-color;
+    }
+}
