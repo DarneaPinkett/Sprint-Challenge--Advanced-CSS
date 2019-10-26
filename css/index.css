@@ -164,6 +164,11 @@ nav {
   text-align: center;
   background: #F6F6F6;
   font-family: #454A59;
+  font-size: 6em;
+}
+nav a {
+  text-decoration: none;
+  font-size: 2rem;
 }
 footer {
   color: #22283B;
